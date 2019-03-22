@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{e4d87616-f4d4-4660-9ee0-9beeb66b4358}">
         <property name="name">
-            <value>Enemy_Sound_Affect</value>
+            <value>Wraith_Enemy_Sound_Affect</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
         </property>
         <relationship name="folder">
-            <destination>{9bc873c6-6077-49aa-b96b-0a07f06df097}</destination>
+            <destination>{a81bf73c-59db-476d-813e-816fa1a6a321}</destination>
         </relationship>
         <relationship name="mixer">
             <destination>{5aeb9fef-edd7-4880-be0b-97a46c0d3db9}</destination>
@@ -30,6 +30,9 @@
         </relationship>
         <relationship name="timeline">
             <destination>{eb4a2176-096f-4d14-9c40-70c181223273}</destination>
+        </relationship>
+        <relationship name="banks">
+            <destination>{428a4c2c-368b-4cad-8881-b114e04fcc06}</destination>
         </relationship>
     </object>
     <object class="EventMixer" id="{5aeb9fef-edd7-4880-be0b-97a46c0d3db9}">

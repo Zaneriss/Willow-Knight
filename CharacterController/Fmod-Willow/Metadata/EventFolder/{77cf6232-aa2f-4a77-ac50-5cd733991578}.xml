@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EventFolder" id="{77cf6232-aa2f-4a77-ac50-5cd733991578}">
+        <property name="name">
+            <value>Abyssal</value>
+        </property>
+        <relationship name="folder">
+            <destination>{9bc873c6-6077-49aa-b96b-0a07f06df097}</destination>
+        </relationship>
+    </object>
+</objects>

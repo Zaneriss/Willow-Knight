@@ -12,26 +12,26 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114839458018559070}
-  - {fileID: 114542552400585924}
+  - {fileID: 114626682879414702}
+  - {fileID: 114467429728859822}
   EditorEvents:
-  - {fileID: 114295260083050666}
-  - {fileID: 114810388152925960}
-  - {fileID: 114138563696748134}
-  - {fileID: 114251803636422480}
-  - {fileID: 114397367646550770}
-  - {fileID: 114787167884012512}
-  - {fileID: 114579617508373476}
-  - {fileID: 114058898009721220}
-  - {fileID: 114303437237675238}
-  - {fileID: 114711623149982302}
+  - {fileID: 114516901002678098}
+  - {fileID: 114503604294604094}
+  - {fileID: 114319965531444680}
+  - {fileID: 114284054285684006}
+  - {fileID: 114475241977343196}
+  - {fileID: 114719238832483894}
+  - {fileID: 114155167775905140}
+  - {fileID: 114660524841264330}
+  - {fileID: 114183391626836262}
+  - {fileID: 114694212962891538}
   MasterBanks:
-  - {fileID: 114542552400585924}
+  - {fileID: 114467429728859822}
   StringsBanks:
-  - {fileID: 114839458018559070}
+  - {fileID: 114626682879414702}
   stringsBankWriteTime: 636886804644859891
   cacheVersion: 3
---- !u!114 &114058898009721220
+--- !u!114 &114155167775905140
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -42,105 +42,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Player Sounds/Player_Dying_Sound
-  guid: 5b8aa1ab1047e0498dfad5e9c4e9ef31
+  Path: event:/Player Sounds/Player_Getting_Hit
+  guid: 55e5014ecfc924489b0ea5051bfba508
   Banks:
-  - {fileID: 114542552400585924}
+  - {fileID: 114467429728859822}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1126
---- !u!114 &114138563696748134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Enemy Sounds/Enemy_Sound_Affect
-  guid: 1676d8e4d4f460469ee09beeb66b4358
-  Banks:
-  - {fileID: 114542552400585924}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1520
---- !u!114 &114200260024183226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/The stuff/Weapon swing
-  guid: 4a085537ad55a04a8be385e16b675851
-  Banks: []
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 214
---- !u!114 &114251803636422480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Player Sounds/Player_landing_SoundEffect
-  guid: 2c621c4dea4760438ac424a91cbc8c33
-  Banks:
-  - {fileID: 114542552400585924}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 168
---- !u!114 &114295260083050666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Weapon sounds/Weapon_Swing_Charged_Attack
-  guid: 1386b1869d24b646bb32ba10e5cb48db
-  Banks:
-  - {fileID: 114542552400585924}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 214
---- !u!114 &114303437237675238
+  Length: 603
+--- !u!114 &114183391626836262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -154,7 +67,7 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player_Jumping
   guid: 90b4306748770e489d255801319e48f2
   Banks:
-  - {fileID: 114542552400585924}
+  - {fileID: 114467429728859822}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -162,7 +75,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 330
---- !u!114 &114397367646550770
+--- !u!114 &114284054285684006
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -176,7 +89,7 @@ MonoBehaviour:
   Path: event:/Enemy Sounds/Enemy_Sound_Attacking
   guid: 329e400be14ffc4395232e2a084d3169
   Banks:
-  - {fileID: 114542552400585924}
+  - {fileID: 114467429728859822}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -184,7 +97,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1044
---- !u!114 &114542552400585924
+--- !u!114 &114319965531444680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Player_landing_SoundEffect
+  guid: 2c621c4dea4760438ac424a91cbc8c33
+  Banks:
+  - {fileID: 114467429728859822}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 168
+--- !u!114 &114467429728859822
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -203,51 +138,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 199232
   Exists: 1
---- !u!114 &114579617508373476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Player Sounds/Player_Getting_Hit
-  guid: 55e5014ecfc924489b0ea5051bfba508
-  Banks:
-  - {fileID: 114542552400585924}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 603
---- !u!114 &114711623149982302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Enemy Sounds/Enemy_Dying_Sound
-  guid: bfa68de5864cf049b83dc6e14d84e748
-  Banks:
-  - {fileID: 114542552400585924}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1486
---- !u!114 &114787167884012512
+--- !u!114 &114475241977343196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -261,7 +152,7 @@ MonoBehaviour:
   Path: event:/Environment_Sounds/Wind_Sounds_loop
   guid: 46305c124f37f64e86e16e1ec9b8b895
   Banks:
-  - {fileID: 114542552400585924}
+  - {fileID: 114467429728859822}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -269,7 +160,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10541
---- !u!114 &114810388152925960
+--- !u!114 &114503604294604094
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -280,10 +171,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Weapon sounds/Weapon_Swing_Attacked
-  guid: 4a085537ad55a04a8be385e16b675851
+  Path: event:/Enemy Sounds/Enemy_Sound_Affect
+  guid: 1676d8e4d4f460469ee09beeb66b4358
   Banks:
-  - {fileID: 114542552400585924}
+  - {fileID: 114467429728859822}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1520
+--- !u!114 &114516901002678098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Weapon sounds/Weapon_Swing_Charged_Attack
+  guid: 1386b1869d24b646bb32ba10e5cb48db
+  Banks:
+  - {fileID: 114467429728859822}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -291,7 +204,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 214
---- !u!114 &114839458018559070
+--- !u!114 &114626682879414702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -309,3 +222,69 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1262
   Exists: 1
+--- !u!114 &114660524841264330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Player_Dying_Sound
+  guid: 5b8aa1ab1047e0498dfad5e9c4e9ef31
+  Banks:
+  - {fileID: 114467429728859822}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1126
+--- !u!114 &114694212962891538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy Sounds/Enemy_Dying_Sound
+  guid: bfa68de5864cf049b83dc6e14d84e748
+  Banks:
+  - {fileID: 114467429728859822}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1486
+--- !u!114 &114719238832483894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Weapon sounds/Weapon_Swing_Attacked
+  guid: 4a085537ad55a04a8be385e16b675851
+  Banks:
+  - {fileID: 114467429728859822}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 214
