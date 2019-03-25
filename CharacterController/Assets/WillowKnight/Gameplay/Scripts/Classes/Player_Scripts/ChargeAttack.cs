@@ -81,7 +81,7 @@ public class ChargeAttack : MonoBehaviour {
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
 
-                enemiesToDamage[i].GetComponent<Boss>().TakeDamage(damage);
+                enemiesToDamage[i].GetComponent<iDamagable>().TakeDamage(damage);
             }
 
             //resets chargetime
