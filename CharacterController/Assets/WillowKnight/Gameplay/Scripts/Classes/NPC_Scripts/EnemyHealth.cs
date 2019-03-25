@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour, iDamagable {
 
-    int maxHealth;
+    public int maxHealth = 10;
     int currentHealth;
+
+    public Image healthBar;
+
     
     // Start is called before the first frame update
     void Start()
@@ -18,6 +22,8 @@ public class EnemyHealth : MonoBehaviour, iDamagable {
     {
         currentHealth -= Mathf.FloorToInt(_damage);
         DamageEffects();
+
+        UpdateHealth();
     }
 
     public void DamageEffects()
@@ -30,6 +36,11 @@ public class EnemyHealth : MonoBehaviour, iDamagable {
             this.GetComponent<EnemyAnim>().DamageAnim();
         }
 
+    }
+
+    void UpdateHealth()
+    {
+        healthBar.fillAmount = currentHealth / maxHealth;
     }
 
 }

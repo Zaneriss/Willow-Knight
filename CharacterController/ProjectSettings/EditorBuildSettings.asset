@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/The_Hallowed_Lord.unity
+    path: Assets/WillowKnight/Gameplay/Scenes/The_Hallowed_Lord.unity
     guid: 137fde1ef3a4ebe41966bf094d068f44
   m_configObjects: {}
