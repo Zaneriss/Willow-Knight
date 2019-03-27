@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{f850353a-bd94-48f9-8d5d-195f3dc56c8b}">
+        <property name="assetPath">
+            <value>Enemy_AbyssalMass_Sound.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>10.181950113378685</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{4dcfde46-3790-4e54-9dac-4318f089d600}</destination>
+        </relationship>
+    </object>
+</objects>

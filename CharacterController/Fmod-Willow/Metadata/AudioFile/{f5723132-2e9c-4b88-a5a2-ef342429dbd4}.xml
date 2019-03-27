@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{f5723132-2e9c-4b88-a5a2-ef342429dbd4}">
+        <property name="assetPath">
+            <value>Player_landing_SoundEffect.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.16834467120181407</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{4dcfde46-3790-4e54-9dac-4318f089d600}</destination>
+        </relationship>
+    </object>
+</objects>

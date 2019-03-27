@@ -4,7 +4,11 @@
     "com.unity.analytics": "3.2.2",
     "com.unity.cinemachine": "2.2.8",
     "com.unity.collab-proxy": "1.2.15",
+<<<<<<< HEAD
     "com.unity.package-manager-ui": "2.0.7",
+=======
+    "com.unity.package-manager-ui": "2.0.3",
+>>>>>>> f62fe79a73181babf7da2cc874ebdaf61d1a450e
     "com.unity.purchasing": "2.0.3",
     "com.unity.textmeshpro": "1.3.0",
     "com.unity.modules.ai": "1.0.0",
