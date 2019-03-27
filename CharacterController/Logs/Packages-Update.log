@@ -1,9 +1,5 @@
 
-<<<<<<< HEAD
 === Wed Mar 20 11:42:53 2019
-=======
-=== Wed Mar 20 11:47:58 2019
->>>>>>> f62fe79a73181babf7da2cc874ebdaf61d1a450e
 
 Packages were changed.
 Update Mode: updateDependencies
@@ -14,7 +10,6 @@ The following packages were updated:
   com.unity.analytics from version 2.0.16 to 3.2.2
   com.unity.package-manager-ui from version 1.9.11 to 2.0.3
   com.unity.textmeshpro from version 1.2.4 to 1.3.0
-<<<<<<< HEAD
 
 === Thu Mar 21 20:16:16 2019
 
@@ -23,5 +18,3 @@ Update Mode: updateDependencies
 
 The following packages were updated:
   com.unity.package-manager-ui from version 2.0.3 to 2.0.7
-=======
->>>>>>> f62fe79a73181babf7da2cc874ebdaf61d1a450e
