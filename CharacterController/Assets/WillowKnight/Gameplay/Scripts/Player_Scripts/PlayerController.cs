@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class PlayerController : MonoBehaviour
 {
@@ -56,14 +57,22 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
 
-   
+    //Grabs the sound for the event
 
+    FMOD.Studio.EventInstance PlayerJumpSound;
+    //FMOD.Studio.EventInstance PlayerLanding;
 
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         FacingRight = false;
+
+        //Sets player jump sound
+        PlayerJumpSound = FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_Jumping");
+
+        //Sets the player landing sound
+        //PlayerLanding = FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_landing_SoundEffect");
         
     }
 
@@ -86,12 +95,17 @@ public class PlayerController : MonoBehaviour
 
         if (onTheGround)
             doubleJumpAllowed = true;
+            
         
 
 
         if (onTheGround && Input.GetButtonDown("Jump"))
         {
             Jump();
+
+            //plays Player jump sound
+
+            PlayerJumpSound.start();
 
         //    animator.SetBool("IsJumping", true);
            
@@ -100,9 +114,14 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
             doubleJumpAllowed = false;
-
-         //   animator.SetBool("IsJumping", true);
           
+
+            //plays the player jump sound.
+
+            PlayerJumpSound.start();
+
+            //   animator.SetBool("IsJumping", true);
+
         }
 
      //   animator.SetBool("IsFalling", false);

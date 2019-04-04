@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using FMODUnity;
 
 
 public class ChargeAttack : MonoBehaviour {
@@ -33,41 +34,60 @@ public class ChargeAttack : MonoBehaviour {
     public GameObject AttackParticles;
     public GameObject ReadyParticles;
 
+    //grabs event sound
+
+    FMOD.Studio.EventInstance PlayerChargeSound;
+    FMOD.Studio.EventInstance PlayerChargedAttack;
+
+
+    void Start()
+    {
+
+        PlayerChargeSound = FMODUnity.RuntimeManager.CreateInstance ("event:/Other sound affects/Player_Best_Charged_Sound");
+        PlayerChargedAttack = FMODUnity.RuntimeManager.CreateInstance("event:/Weapon sounds/Weapon_Swing_Charged_Attack");
+    }
+
     // Update is called once per frame
     void Update () {
 
         //when the key is pressed the chargetime begins to increase in value
-        if (Input .GetKey(ChargeKey))
+        if (Input.GetKey(ChargeKey))
         {
             Chargetime += Time.deltaTime;
-           
+ 
         }
 
         //between given values the particle systems change as to show how close the charge attack is to being fully charged
         if ((Chargetime > 0.1) && ( Chargetime < 0.75))
         {
             Instantiate(ChargingParticles1, transform.position, Quaternion.identity);
+            
         }
 
         if ((Chargetime > 0.75) && (Chargetime < 1.5))
         {
             Instantiate(ChargingParticles2, transform.position, Quaternion.identity);
+            
         }
 
         if ((Chargetime > 1.5) && (Chargetime < 2))
         {
             Instantiate(ChargingParticles3, transform.position, Quaternion.identity);
+            
         }
 
         if (Chargetime > 2) 
         {
             Instantiate(ChargingParticles4, transform.position, Quaternion.identity);
+            
+
         }
 
         //a particle effect that gets triggered when the charge attack is ready to be used
         if ((Chargetime > 2) && (Chargetime < 2.1))
         {
             Instantiate(ReadyParticles, transform.position, Quaternion.identity);
+            
         }
 
         //if the key is released and the chargetime is above the required amount to fully charge the attack, the attack gets
@@ -76,6 +96,7 @@ public class ChargeAttack : MonoBehaviour {
         {
             Instantiate(AttackParticles, transform.position, Quaternion.identity);
             Debug.Log("Boris SpecSlash");
+            PlayerChargedAttack.start();
             BorisSlash.SetTrigger("IsAttacking");
             Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, MarkAsEnemy);
             for (int i = 0; i < enemiesToDamage.Length; i++)

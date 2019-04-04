@@ -39,11 +39,12 @@ MonoBehaviour:
   - {fileID: 114897162038052678}
   - {fileID: 114767584147538176}
   - {fileID: 114995053787633388}
+  - {fileID: 114282310386456254}
   MasterBanks:
   - {fileID: 114344438806948490}
   StringsBanks:
   - {fileID: 114503314189398908}
-  stringsBankWriteTime: 636899232511754521
+  stringsBankWriteTime: 636899847230015008
   cacheVersion: 3
 --- !u!114 &114017588247181718
 MonoBehaviour:
@@ -252,6 +253,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 168
+--- !u!114 &114282310386456254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Other sound affects/Player_Best_Charged_Sound
+  guid: feba1f19c82c8349bee4eebb4e1b7b60
+  Banks:
+  - {fileID: 114344438806948490}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 986
 --- !u!114 &114344438806948490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,11 +290,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\scott\OneDrive\Documents\GitHub\Willow-Knight\CharacterController\Assets\Willow_Knight_Sounds\Build\Desktop\Master
     Bank.bank
-  lastModified: 636899232511663819
+  lastModified: 636899847229915005
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 609184
+    Value: 620352
   Exists: 1
 --- !u!114 &114344818132813790
 MonoBehaviour:
@@ -419,11 +443,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\Willow_Knight_Sounds\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636899232511754521
+  lastModified: 636899847230015008
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1990
+    Value: 2050
   Exists: 1
 --- !u!114 &114506676143226068
 MonoBehaviour:
