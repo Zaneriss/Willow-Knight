@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets\Willow_Knight_Sounds\Willow_Knight_Sounds.fspro
-  SourceProjectPathUnformatted: Assets\Willow_Knight_Sounds\Willow_Knight_Sounds.fspro
-  SourceBankPathUnformatted: Assets\Willow_Knight_Sounds\Build
+  sourceProjectPath: Fmod-Willow\Willow_Knight_Sounds\Willow_Knight_Sounds.fspro
+  SourceProjectPathUnformatted: Fmod-Willow\Willow_Knight_Sounds\Willow_Knight_Sounds.fspro
+  SourceBankPathUnformatted: Fmod-Willow\Willow_Knight_Sounds\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0

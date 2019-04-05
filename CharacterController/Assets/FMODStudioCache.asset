@@ -13,39 +13,61 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114503314189398908}
-  - {fileID: 114344438806948490}
+  - {fileID: 114595102637554084}
+  - {fileID: 114377198175640638}
   EditorEvents:
-  - {fileID: 114549715517975694}
-  - {fileID: 114208354472782766}
-  - {fileID: 114274627838289992}
-  - {fileID: 114936789021805996}
-  - {fileID: 114346460017775422}
-  - {fileID: 114129402007682048}
-  - {fileID: 114528228726255668}
-  - {fileID: 114506676143226068}
-  - {fileID: 114154957566450724}
-  - {fileID: 114098861361549726}
-  - {fileID: 114777407236633352}
-  - {fileID: 114017588247181718}
-  - {fileID: 114735635106842442}
-  - {fileID: 114018973375816846}
-  - {fileID: 114189179795601486}
-  - {fileID: 114496828295805688}
-  - {fileID: 114022151766738060}
-  - {fileID: 114344818132813790}
-  - {fileID: 114481302218351672}
-  - {fileID: 114417788013161656}
-  - {fileID: 114897162038052678}
-  - {fileID: 114767584147538176}
-  - {fileID: 114995053787633388}
-  - {fileID: 114282310386456254}
+  - {fileID: 114098394639904896}
+  - {fileID: 114362859815570686}
+  - {fileID: 114012411321967394}
+  - {fileID: 114626426297239144}
+  - {fileID: 114945589783398236}
+  - {fileID: 114105997928396176}
+  - {fileID: 114870604331071340}
+  - {fileID: 114133524457607470}
+  - {fileID: 114188197322154040}
+  - {fileID: 114044954831066318}
+  - {fileID: 114097829716056358}
+  - {fileID: 114142116007880886}
+  - {fileID: 114833287076880484}
+  - {fileID: 114088036223837730}
+  - {fileID: 114494363445781160}
+  - {fileID: 114753882728696700}
+  - {fileID: 114716291925987858}
+  - {fileID: 114432962843513220}
+  - {fileID: 114163183169942708}
+  - {fileID: 114727335757564454}
+  - {fileID: 114495115230392382}
+  - {fileID: 114486530706569484}
+  - {fileID: 114781572565994240}
   MasterBanks:
-  - {fileID: 114344438806948490}
+  - {fileID: 114377198175640638}
   StringsBanks:
-  - {fileID: 114503314189398908}
-  stringsBankWriteTime: 636899847230015008
+  - {fileID: 114595102637554084}
+  stringsBankWriteTime: 636899232511754521
   cacheVersion: 3
+--- !u!114 &114012411321967394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Player_landing_SoundEffect
+  guid: 2c621c4dea4760438ac424a91cbc8c33
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 168
 --- !u!114 &114017588247181718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +137,98 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4318
+--- !u!114 &114044954831066318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Player_Dying_Sound
+  guid: 5b8aa1ab1047e0498dfad5e9c4e9ef31
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1126
+--- !u!114 &114088036223837730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Mass/Enemy_AbyssalMass_Attack
+  guid: 76a1b57a96b82d47a5080cff0193abb9
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 789
+--- !u!114 &114097829716056358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Burden/Enemy_Burnden_Death_Sound
+  guid: 5f7e5d3421f3a1448bc7b5128758afce
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1801
+--- !u!114 &114098394639904896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Weapon sounds/Weapon_Swing_Charged_Attack
+  guid: 1386b1869d24b646bb32ba10e5cb48db
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 214
 --- !u!114 &114098861361549726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +252,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1126
+--- !u!114 &114105997928396176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Other sound affects/Teleport
+  guid: 41ee4cc6e480314aa7bea75021a4f5d8
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 673
 --- !u!114 &114129402007682048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +298,52 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 673
+--- !u!114 &114133524457607470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Weapon sounds/Weapon_Swing_Attacked
+  guid: 4a085537ad55a04a8be385e16b675851
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 214
+--- !u!114 &114142116007880886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Burden/Enemy_Burnden_Footstep
+  guid: 61c95f7ccc3e24498af404c50a5e9ca2
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 394
 --- !u!114 &114154957566450724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +360,52 @@ MonoBehaviour:
   guid: 55e5014ecfc924489b0ea5051bfba508
   Banks:
   - {fileID: 114344438806948490}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 603
+--- !u!114 &114163183169942708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Other sound affects/Player_Possible_Charge_Sound
+  guid: d923d243447c2b4f8eb71aad235dd121
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4318
+--- !u!114 &114188197322154040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Player_Getting_Hit
+  guid: 55e5014ecfc924489b0ea5051bfba508
+  Banks:
+  - {fileID: 114377198175640638}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -342,6 +571,49 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 661
+--- !u!114 &114362859815570686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Wraith_Enemy_Sounds/Wraith_Enemy_Sound_Affect
+  guid: 1676d8e4d4f460469ee09beeb66b4358
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1520
+--- !u!114 &114377198175640638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\scott\OneDrive\Documents\GitHub\Willow-Knight\CharacterController\Fmod-Willow\Willow_Knight_Sounds\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636899232511663819
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 609184
+  Exists: 1
 --- !u!114 &114383207012511116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +656,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1044
+--- !u!114 &114432962843513220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Wraith_Enemy_Sounds/Wraith_Enemy_Dying_Sound
+  guid: bfa68de5864cf049b83dc6e14d84e748
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1486
 --- !u!114 &114481302218351672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,6 +702,75 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4318
+--- !u!114 &114486530706569484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Burden/Enemy_Burnden_Thrown_voice
+  guid: ec607571c23d244b95aa4dfe6887e0e4
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1207
+--- !u!114 &114494363445781160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Crawler/Enemy_crawler_crawling
+  guid: 90012bd964ddbf44b164a95a35436d4a
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6600
+--- !u!114 &114495115230392382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Mass/Enemy_AbyssalMass_Sound
+  guid: eb9beb93fe3b2a44ba72a1ba454ae1f8
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10181
 --- !u!114 &114496828295805688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,6 +882,71 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 214
+--- !u!114 &114595102637554084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Fmod-Willow\Willow_Knight_Sounds\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636899232511754521
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1990
+  Exists: 1
+--- !u!114 &114626426297239144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Wraith_Enemy_Sounds/Wraith_Enemy_Sound_Attacking
+  guid: 329e400be14ffc4395232e2a084d3169
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1044
+--- !u!114 &114716291925987858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Other sound affects/Player_Possible_Charge_Sound_Fade_In
+  guid: be84bb6e1b9c114083f9ab62b8fb9bc4
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4318
 --- !u!114 &114716932248527926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,6 +988,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 16064
   Exists: 0
+--- !u!114 &114727335757564454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Crawler/Enemy_crawler_death_sound
+  guid: dca6194595ab6e42976b5ad82ff50c13
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1044
 --- !u!114 &114735635106842442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +1034,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 301
+--- !u!114 &114753882728696700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Player_Jumping
+  guid: 90b4306748770e489d255801319e48f2
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 330
 --- !u!114 &114767584147538176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,6 +1103,75 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1801
+--- !u!114 &114781572565994240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Crawler/Enemy_crawler_Murmurs
+  guid: f13b106ba5ea404dbab640396cb2ec10
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5384
+--- !u!114 &114833287076880484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Other sound affects/Player_Possible_Dash_Sound
+  guid: 643d22e9d4cb8e499eafb8d38bae9545
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 301
+--- !u!114 &114870604331071340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Environment_Sounds/Wind_Sounds_loop
+  guid: 46305c124f37f64e86e16e1ec9b8b895
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10541
 --- !u!114 &114897162038052678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -674,6 +1218,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1044
+--- !u!114 &114945589783398236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Mass/Enemy_AbyssalMass_Death_Sound
+  guid: 3ca4b16981c0114295183693897676b9
+  Banks:
+  - {fileID: 114377198175640638}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 661
 --- !u!114 &114995053787633388
 MonoBehaviour:
   m_ObjectHideFlags: 0
