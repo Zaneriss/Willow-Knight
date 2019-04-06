@@ -36,14 +36,14 @@ public class ChargeAttack : MonoBehaviour {
 
     //grabs event sound
 
-    FMOD.Studio.EventInstance PlayerChargeSound;
+    //FMOD.Studio.EventInstance PlayerChargeSound;
     FMOD.Studio.EventInstance PlayerChargedAttack;
 
 
     void Start()
     {
 
-        PlayerChargeSound = FMODUnity.RuntimeManager.CreateInstance ("event:/Other sound affects/Player_Best_Charged_Sound");
+       // PlayerChargeSound = FMODUnity.RuntimeManager.CreateInstance ("event:/Other sound affects/Player_Best_Charged_Sound");
         PlayerChargedAttack = FMODUnity.RuntimeManager.CreateInstance("event:/Weapon sounds/Weapon_Swing_Charged_Attack");
     }
 
