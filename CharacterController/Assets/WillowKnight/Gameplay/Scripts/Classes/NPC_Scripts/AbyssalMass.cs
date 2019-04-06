@@ -8,10 +8,10 @@ public class AbyssalMass : EnemyBaseScript
 
 
     public override void Movement(){
-        
+
     }
 
-    public override void TakeDamage(float _dmg){
+    public override void TakeDamage(int _dmg){
 
     }
 

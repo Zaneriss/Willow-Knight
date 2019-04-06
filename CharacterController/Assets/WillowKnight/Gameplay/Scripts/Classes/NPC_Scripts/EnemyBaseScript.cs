@@ -18,7 +18,7 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
 
     public abstract void Movement();
 
-    public abstract void TakeDamage(float _dmg);
+    public abstract void TakeDamage(int _dmg);
 
     public virtual bool GroundCheck(){
         
