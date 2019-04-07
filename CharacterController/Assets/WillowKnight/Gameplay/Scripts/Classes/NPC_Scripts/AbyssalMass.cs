@@ -11,6 +11,10 @@ public class AbyssalMass : EnemyBaseScript
 
     }
 
+    protected override void SelfDestruct(){
+        Destroy(this.gameObject);
+    }
+
     public override void TakeDamage(int _dmg){
 
     }

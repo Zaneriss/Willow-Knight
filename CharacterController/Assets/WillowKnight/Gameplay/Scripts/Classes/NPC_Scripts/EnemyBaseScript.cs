@@ -6,10 +6,12 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
 {
     public float moveSpeedInUnitsPerSecond;
 
-    public float maxHealth;
-    float currentHealth;
+    public int maxHealth;
+    int currentHealth;
 
     public Transform groundCheckObject;
+
+    
 
 
     public virtual void Start() {
@@ -18,7 +20,21 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
 
     public abstract void Movement();
 
-    public abstract void TakeDamage(int _dmg);
+    protected abstract void SelfDestruct();
+
+    protected virtual Vector2 playerDetection(){
+        Vector2 _playerLocation = Vector2.zero;
+
+        return _playerLocation;
+    }
+
+    public virtual void TakeDamage(int _dmg){
+        currentHealth -= _dmg;
+
+        if(currentHealth<=0){
+            SelfDestruct();
+        }
+    }
 
     public virtual bool GroundCheck(){
         
