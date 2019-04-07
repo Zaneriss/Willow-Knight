@@ -7,8 +7,12 @@ public class AbyssalMass : EnemyBaseScript
 
 
 
-    public override void Movement(){
+    protected void Update() {
+        
+    }
 
+    public override void Movement(){
+        
     }
 
     protected override void SelfDestruct(){
