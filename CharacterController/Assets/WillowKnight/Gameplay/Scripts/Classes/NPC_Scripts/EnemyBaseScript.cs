@@ -10,6 +10,7 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
     public int maxHealth = 10;
     //current health value
     int currentHealth;
+
     [Range (0,200)]
     public float detectionRadius = 5;
 
@@ -78,13 +79,13 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
     }
 
     public virtual bool GroundCheck(){
-        
+
         bool _checkData = false;
 
         RaycastHit2D[] _hit = Physics2D.LinecastAll(
             new Vector2(this.transform.position.x,this.transform.position.y),
-            new Vector2(groundCheckObject.position.x,groundCheckObject.position.y)    
-         );
+            new Vector2(groundCheckObject.position.x,groundCheckObject.position.y)
+        );
 
            for(int _i = 0; _i<_hit.Length;_i++){
                if(_hit[_i].collider.tag != "Enemy"){

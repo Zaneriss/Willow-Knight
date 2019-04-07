@@ -213,7 +213,7 @@ Transform:
   m_GameObject: {fileID: 354160334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.65, y: -3.46, z: 0}
-  m_LocalScale: {x: 45.988, y: 1, z: 1}
+  m_LocalScale: {x: 603.04065, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -364,6 +364,11 @@ PrefabInstance:
     - target: {fileID: 212453829717731496, guid: 70155bbbccd79cc4db03b40cf37bcbbe,
         type: 3}
       propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114404637215975494, guid: 70155bbbccd79cc4db03b40cf37bcbbe,
+        type: 3}
+      propertyPath: damage
       value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -535,7 +540,7 @@ PrefabInstance:
     - target: {fileID: 7730765375698720750, guid: 23a2b6acd91927b48a6de14f6e747052,
         type: 3}
       propertyPath: detectionRadius
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7730765375698720750, guid: 23a2b6acd91927b48a6de14f6e747052,
         type: 3}
