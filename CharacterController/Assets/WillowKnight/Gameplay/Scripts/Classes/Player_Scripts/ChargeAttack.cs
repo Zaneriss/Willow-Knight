@@ -36,9 +36,9 @@ public class ChargeAttack : MonoBehaviour {
 
     //grabs event sound
 
-    //FMOD.Studio.EventInstance PlayerChargeSound;
+   
     FMOD.Studio.EventInstance PlayerChargedAttack;
-    FMOD.Studio.EventInstance PlayerChargedStateOne;
+    
 
 
     void Start()
