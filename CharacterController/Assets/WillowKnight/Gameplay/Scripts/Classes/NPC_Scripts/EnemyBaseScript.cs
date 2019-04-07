@@ -6,7 +6,9 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
 {
     public float moveSpeedInUnitsPerSecond = 1;
 
+    //Maximum Health Set at start
     public int maxHealth = 10;
+    //current health value
     int currentHealth;
     [Range (0,200)]
     public float detectionRadius = 5;
@@ -64,9 +66,12 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
 
     #endregion
 
-    public virtual void TakeDamage(int _dmg){
-        currentHealth -= _dmg;
 
+    //iDamagable method take damage
+    public virtual void TakeDamage(int _dmg){
+        //lower health by damage value
+        currentHealth -= _dmg;
+        //run enemy specific death script if current health is less than or equal to zero
         if(currentHealth<=0){
             SelfDestruct();
         }
@@ -74,7 +79,19 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
 
     public virtual bool GroundCheck(){
         
-        bool _checkData = Physics2D.Linecast(new Vector2(this.transform.position.x,this.transform.position.y), new Vector2(groundCheckObject.position.x,groundCheckObject.position.y));
+        bool _checkData = false;
+
+        RaycastHit2D[] _hit = Physics2D.LinecastAll(
+            new Vector2(this.transform.position.x,this.transform.position.y),
+            new Vector2(groundCheckObject.position.x,groundCheckObject.position.y)    
+         );
+
+           for(int _i = 0; _i<_hit.Length;_i++){
+               if(_hit[_i].collider.tag != "Enemy"){
+                   _checkData = true;
+               }
+           }
+
 
         return _checkData;
     }
