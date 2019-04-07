@@ -22,7 +22,7 @@ public class AbyssalMass : EnemyBaseScript
 
         //horizontal movement tracking the player
         if(_playerPosition!= Vector2.zero){
-            Vector2 _playerDirection = _playerPosition -new Vector2( this.transform.position.x, this.transform.position.y);
+            Vector2 _playerDirection = _playerPosition - new Vector2( this.transform.position.x, this.transform.position.y);
             MyRigidBody.position += ((new Vector2(_playerDirection.x,0)).normalized * moveSpeedInUnitsPerSecond) * Time.deltaTime;
         }
         //horizontal end
@@ -37,9 +37,15 @@ public class AbyssalMass : EnemyBaseScript
     }
 
     protected override void SelfDestruct(){
+
+
+
         Destroy(this.gameObject);
     }
 
+    protected virtual void attack(iDamagable _target, int _dmg){
 
+            _target.TakeDamage(_dmg);
+    }
 
 }
