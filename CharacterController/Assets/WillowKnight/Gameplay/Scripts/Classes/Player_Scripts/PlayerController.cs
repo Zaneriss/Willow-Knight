@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
     //Grabs the sound for the event
 
     FMOD.Studio.EventInstance PlayerJumpSound;
-    //FMOD.Studio.EventInstance PlayerLanding;
+   
 
     // Use this for initialization
     void Start()
