@@ -38,13 +38,15 @@ public class ChargeAttack : MonoBehaviour {
 
     //FMOD.Studio.EventInstance PlayerChargeSound;
     FMOD.Studio.EventInstance PlayerChargedAttack;
+    FMOD.Studio.EventInstance PlayerChargedStateOne;
 
 
     void Start()
     {
 
-       // PlayerChargeSound = FMODUnity.RuntimeManager.CreateInstance ("event:/Other sound affects/Player_Best_Charged_Sound");
+       
         PlayerChargedAttack = FMODUnity.RuntimeManager.CreateInstance("event:/Weapon sounds/Weapon_Swing_Charged_Attack");
+       
     }
 
     // Update is called once per frame
@@ -54,40 +56,61 @@ public class ChargeAttack : MonoBehaviour {
         if (Input.GetKey(ChargeKey))
         {
             Chargetime += Time.deltaTime;
- 
         }
+
+        // Used so Charge sounds can play
 
         //between given values the particle systems change as to show how close the charge attack is to being fully charged
         if ((Chargetime > 0.1) && ( Chargetime < 0.75))
         {
             Instantiate(ChargingParticles1, transform.position, Quaternion.identity);
-            
+
+            if ((Chargetime > 0.1) && (Chargetime < 0.12))
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Other sound affects/Charge_Sound_1");
+            }
+                
         }
 
         if ((Chargetime > 0.75) && (Chargetime < 1.5))
         {
             Instantiate(ChargingParticles2, transform.position, Quaternion.identity);
             
+
+            if((Chargetime > 0.75) && (Chargetime < 0.77))
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Other sound affects/Charge_Sound_2");
+            }
         }
 
         if ((Chargetime > 1.5) && (Chargetime < 2))
         {
             Instantiate(ChargingParticles3, transform.position, Quaternion.identity);
-            
+
+            if ((Chargetime > 1.5) && (Chargetime < 1.52))
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Other sound affects/Charge_Sound_2");
+            }
         }
 
         if (Chargetime > 2) 
         {
             Instantiate(ChargingParticles4, transform.position, Quaternion.identity);
-            
 
+            if ((Chargetime > 0.75) && (Chargetime < 0.77))
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Other sound affects/Charge_Sound_3");
+            }
         }
 
         //a particle effect that gets triggered when the charge attack is ready to be used
         if ((Chargetime > 2) && (Chargetime < 2.1))
         {
             Instantiate(ReadyParticles, transform.position, Quaternion.identity);
-            
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Other sound affects/Teleport");
+
+
+
         }
 
         //if the key is released and the chargetime is above the required amount to fully charge the attack, the attack gets
