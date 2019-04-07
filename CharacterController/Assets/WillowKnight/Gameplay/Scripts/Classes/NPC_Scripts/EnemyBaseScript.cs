@@ -24,6 +24,7 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
 
     protected abstract void SelfDestruct();
 
+    #region PlayerDetection
 
     //Player Detection Code
     //returns Player location as a vector2
@@ -43,6 +44,25 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
         return _playerLocation;
       
     }
+    //returns Player location as a vector2 taking in the detection range
+    protected virtual Vector2 playerDetection(float _detectionRange){
+        //Vector to be returned
+        Vector2 _playerLocation = Vector2.zero;
+        //Use a circle cast to grab all "hits" for objects within set radius
+        RaycastHit2D[] _hits = Physics2D.CircleCastAll(this.gameObject.GetComponent<Rigidbody2D>().position,_detectionRange,Vector2.zero);
+        //cycle through the hits if any of them were a "Player" object set the _playerLocation variable to the position of the collider.
+        for(int _i = 0; _i < _hits.Length;_i++){
+            if (_hits[_i].collider.gameObject.tag == "Player"){
+                _playerLocation = _hits[_i].collider.gameObject.transform.position;
+            }
+        }
+        
+        //return the found player location
+        return _playerLocation;
+      
+    }
+
+    #endregion
 
     public virtual void TakeDamage(int _dmg){
         currentHealth -= _dmg;
