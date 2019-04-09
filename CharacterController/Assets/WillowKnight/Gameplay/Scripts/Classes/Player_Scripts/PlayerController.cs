@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using FMODUnity;
 
 public class PlayerController : MonoBehaviour
 {
@@ -57,76 +56,72 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
 
-    //Grabs the sound for the event
-
-    FMOD.Studio.EventInstance PlayerJumpSound;
    
+
 
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         FacingRight = false;
-
-        //Sets player jump sound
-        PlayerJumpSound = FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_Jumping");
-
-        //Sets the player landing sound
-        //PlayerLanding = FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_landing_SoundEffect");
         
     }
 
     // Update is called once per frame
+
+    //     UNUSED ANIMATORS
+    //   animator.SetBool("IsJumping", false);
+    //   animator.SetBool("IsFalling", false);
+
+    //Double Jump Code
+
     void Update()
     {
-     //     UNUSED ANIMATORS
-     //   animator.SetBool("IsJumping", false);
-     //   animator.SetBool("IsFalling", false);
 
-        //Double Jump Code
+
+
 
         if (rb.velocity.y == 0)
+        {
             onTheGround = true;
-     
+
+            Debug.Log("fug");
+        }
 
         else
             onTheGround = false;
-     //   animator.SetBool("IsFalling", true);
+        //   animator.SetBool("IsFalling", true);
 
         if (onTheGround)
+        {
             doubleJumpAllowed = true;
-            
-        
+
+        }
 
 
         if (onTheGround && Input.GetButtonDown("Jump"))
         {
             Jump();
 
-            //plays Player jump sound
+            //animator.SetBool("IsJumping", true);
 
-            PlayerJumpSound.start();
-
-        //    animator.SetBool("IsJumping", true);
-           
         }
+
         else if (doubleJumpAllowed && Input.GetButtonDown("Jump"))
         {
             Jump();
             doubleJumpAllowed = false;
-          
-
-            //plays the player jump sound.
-
-            PlayerJumpSound.start();
 
             //   animator.SetBool("IsJumping", true);
 
         }
 
-     //   animator.SetBool("IsFalling", false);
+        //   animator.SetBool("IsFalling", false);
 
         //movement
+
+
+
 
         dirX = Input.GetAxis("Horizontal") * moveSpeed;
         rb.velocity = new Vector2(dirX, rb.velocity.y);
@@ -137,19 +132,22 @@ public class PlayerController : MonoBehaviour
 
         //flips sprite animation
 
-            if (dirX > 0 && !FacingRight || dirX < 0 && FacingRight)
-            {
-                FacingRight = !FacingRight;
+        if (dirX > 0 && !FacingRight || dirX < 0 && FacingRight)
+        {
+            FacingRight = !FacingRight;
 
-                Vector2 theScale = transform.localScale;
+            Vector2 theScale = transform.localScale;
 
-                theScale.x *= -1;
+            theScale.x *= -1;
 
-                transform.localScale = theScale;
+            transform.localScale = theScale;
+        }
 
-            }
 
-      
+
+
+
+
         //checks for a surface to the immediate right or left of the player
         wallCheckHitR = Physics2D.Raycast(wallCheckR.position, wallCheckR.right, wallCheckDistanceR);
 
@@ -161,6 +159,8 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("wallhit");
         }
+
+
 
         //checks for wall contact and then turns on wallslide if there is contact
         if (wallCheckHitR && rb.velocity.y <= 0 && !onTheGround)
@@ -209,15 +209,9 @@ public class PlayerController : MonoBehaviour
         //player health stuff
 
         //HealthBar.value = PlayerHealth;
-        
-
-        if (PlayerHealth <= 0)
-        {
-            Destroy(gameObject);
-            Instantiate(LightBlast, transform.position, Quaternion.identity);
-        }
 
     }
+    
 
     //jumping code
     void Jump()
@@ -238,9 +232,9 @@ public class PlayerController : MonoBehaviour
         }
     
     }
-
+}
    
 
-}
+
 
 
