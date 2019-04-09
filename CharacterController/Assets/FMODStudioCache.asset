@@ -35,7 +35,6 @@ MonoBehaviour:
   - {fileID: 114673969164915902}
   - {fileID: 114762369993788970}
   - {fileID: 114292478988237918}
-  - {fileID: 114932780928343690}
   - {fileID: 114484896715170876}
   - {fileID: 114902605856491780}
   - {fileID: 114657891290951756}
@@ -43,11 +42,12 @@ MonoBehaviour:
   - {fileID: 114724330810820372}
   - {fileID: 114795071029365576}
   - {fileID: 114394895971934682}
+  - {fileID: 114949411074364754}
   MasterBanks:
   - {fileID: 114026483489209574}
   StringsBanks:
   - {fileID: 114880240685431960}
-  stringsBankWriteTime: 636902472871654314
+  stringsBankWriteTime: 636904287823511290
   cacheVersion: 3
 --- !u!114 &114026483489209574
 MonoBehaviour:
@@ -63,11 +63,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\scott\OneDrive\Documents\GitHub\Willow-Knight\CharacterController\Fmod-Willow\Willow_Knight_Sounds\Build\Desktop\Master
     Bank.bank
-  lastModified: 636902472871524314
+  lastModified: 636904287823411295
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 616160
+    Value: 626880
   Exists: 1
 --- !u!114 &114068288111129468
 MonoBehaviour:
@@ -634,11 +634,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Fmod-Willow\Willow_Knight_Sounds\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636902472871654314
+  lastModified: 636904287823511290
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2142
+    Value: 2150
   Exists: 1
 --- !u!114 &114887829876547024
 MonoBehaviour:
@@ -709,3 +709,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 330
+--- !u!114 &114949411074364754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Player_Jumping_Sounds
+  guid: 424a596411778d42b7fef9fd1e546759
+  Banks:
+  - {fileID: 114026483489209574}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 406

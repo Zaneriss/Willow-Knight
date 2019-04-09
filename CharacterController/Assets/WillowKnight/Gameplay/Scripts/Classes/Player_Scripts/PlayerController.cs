@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
     //Grabs the sound for the event
 
     FMOD.Studio.EventInstance PlayerJumpSound;
+    FMOD.Studio.EventInstance PlayerLanding;
    
 
     // Use this for initialization
@@ -69,25 +70,28 @@ public class PlayerController : MonoBehaviour
         FacingRight = false;
 
         //Sets player jump sound
-        PlayerJumpSound = FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_Jumping");
+        PlayerJumpSound = FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_Jumping_Sounds");
 
         //Sets the player landing sound
-        //PlayerLanding = FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_landing_SoundEffect");
+        PlayerLanding = FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_landing_SoundEffect");
         
     }
 
     // Update is called once per frame
     void Update()
     {
-     //     UNUSED ANIMATORS
-     //   animator.SetBool("IsJumping", false);
-     //   animator.SetBool("IsFalling", false);
+        //     UNUSED ANIMATORS
+        //   animator.SetBool("IsJumping", false);
+        //   animator.SetBool("IsFalling", false);
 
         //Double Jump Code
 
         if (rb.velocity.y == 0)
+        
             onTheGround = true;
-     
+            
+
+        
 
         else
             onTheGround = false;
