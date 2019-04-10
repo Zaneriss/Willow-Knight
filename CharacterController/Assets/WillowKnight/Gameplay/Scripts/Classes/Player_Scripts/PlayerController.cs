@@ -60,10 +60,7 @@ public class PlayerController : MonoBehaviour
     //fmod sound effects 
     FMOD.Studio.EventInstance PlayerJumpSound;
 
-    void Awake()
-    {
-        PlayerJumpSound = FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_Jumping_Sounds");
-    }
+   
     // Use this for initialization
     void Start()
     {
