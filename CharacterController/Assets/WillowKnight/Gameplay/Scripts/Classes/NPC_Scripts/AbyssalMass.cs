@@ -12,8 +12,17 @@ public class AbyssalMass : EnemyBaseScript
     public Transform frontCheckObject;
 
 
-    [Range(1,5)]
+    [Range(1, 5)]
     public float AttackRange = 1;
+
+
+    public Animator animatorComponent;
+
+    protected override void Start()
+    {
+        base.Start();
+        animatorComponent = this.GetComponentInChildren<Animator>();
+    }
 
     protected void Update()
     {
