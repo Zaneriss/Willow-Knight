@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class PlayerController : MonoBehaviour
 {
@@ -56,7 +57,8 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
 
-   
+    //fmod sound effects 
+
 
 
     // Use this for initialization
@@ -102,6 +104,7 @@ public class PlayerController : MonoBehaviour
         if (onTheGround && Input.GetButtonDown("Jump"))
         {
             Jump();
+           
 
             //animator.SetBool("IsJumping", true);
 
@@ -218,6 +221,7 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x, 0f); ;
         rb.AddForce(Vector2.up * jumpForce);
+       // FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_Jumping_Sounds");
 
         //if the player is in conact with a wall they get more height from this 
         if (WallSlidingR)
