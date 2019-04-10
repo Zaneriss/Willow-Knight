@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-    public enum BossStates{
+    public enum BurdenBossStates{
         IDLE,
         APROACH,
         SWIPE,
@@ -15,16 +15,99 @@ public class TheBurden : EnemyBaseScript
 
     [Range(1, 17)]
     public float FallSpeedInUnitsPerSecond = 1;
+    public Transform frontCheckObject;
+    public BurdenBossStates currentState;
 
-    public BossStates currentState;
+    protected virtual void BossStateAction(){
+        switch(currentState){
+            case(BurdenBossStates.IDLE):
+            CheckRanges();
+            break;
+            case(BurdenBossStates.APROACH):
+
+            break;
+            case(BurdenBossStates.STOMP):
+
+            break;
+            case(BurdenBossStates.RANGE):
+
+            break;
+            case(BurdenBossStates.SWIPE):
+
+            break;
+        }
+    }
+
+    public void CheckRanges(){
+
+    }
+
 
 
     public override void Movement(){
+                Vector2 _playerPosition = playerDetection();
+        Rigidbody2D MyRigidBody = this.gameObject.GetComponent<Rigidbody2D>();
 
+        //horizontal movement tracking the player
+        if (_playerPosition != Vector2.zero)
+        {
+            Vector2 _playerDirection = _playerPosition - new Vector2(this.transform.position.x, this.transform.position.y);
+            if (!frontCheck())
+            {
+                MyRigidBody.position += ((new Vector2(_playerDirection.x, 0)).normalized * moveSpeedInUnitsPerSecond) * Time.deltaTime;
+            }
+            if (_playerDirection.x > 0)
+            {
+                this.transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else if (_playerDirection.x < 0)
+            {
+                this.transform.localScale = new Vector3(1, 1, 1);
+            }
+
+        }
+
+        //horizontal end
+
+
+        //gravity effect
+        if (GroundCheck() != true)
+        {
+            MyRigidBody.position += (Vector2.down * FallSpeedInUnitsPerSecond) * Time.deltaTime;
+        }
+
+        CheckRanges();
     }
 
     // Update is called once per frame
     protected override void SelfDestruct(){
 
     }
+
+
+    protected virtual bool frontCheck()
+    {
+
+        bool _checkData = false;
+
+        RaycastHit2D[] _hit = Physics2D.LinecastAll(
+            new Vector2(this.transform.position.x, this.transform.position.y),
+            new Vector2(frontCheckObject.position.x, frontCheckObject.position.y)
+        );
+
+        for (int _i = 0; _i < _hit.Length; _i++)
+        {
+            if (_hit[_i].collider.tag != "Enemy")
+            {
+                _checkData = true;
+            }
+        }
+
+
+        return _checkData;
+    }
+
+
+
+
 }

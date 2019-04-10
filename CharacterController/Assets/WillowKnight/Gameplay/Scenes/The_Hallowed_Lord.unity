@@ -243,7 +243,7 @@ PrefabInstance:
     - target: {fileID: 114646559820678938, guid: 70155bbbccd79cc4db03b40cf37bcbbe,
         type: 3}
       propertyPath: wallJumpForce
-      value: 500
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 114646559820678938, guid: 70155bbbccd79cc4db03b40cf37bcbbe,
         type: 3}
@@ -253,7 +253,7 @@ PrefabInstance:
     - target: {fileID: 114646559820678938, guid: 70155bbbccd79cc4db03b40cf37bcbbe,
         type: 3}
       propertyPath: dirX
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 50367556662653884, guid: 70155bbbccd79cc4db03b40cf37bcbbe,
         type: 3}
@@ -535,7 +535,6 @@ GameObject:
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
-  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -616,7 +615,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.21395, y: 2.4329991, z: -10.2}
+  m_LocalPosition: {x: -22.212074, y: 2.4329991, z: -10.2}
   m_LocalScale: {x: 0.08215198, y: 0.083666995, z: 0.25}
   m_Children:
   - {fileID: 792913205}
@@ -698,19 +697,6 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1184608842}
---- !u!114 &519420035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ListenerNumber: 8
 --- !u!1001 &536282971
 PrefabInstance:
   m_ObjectHideFlags: 0

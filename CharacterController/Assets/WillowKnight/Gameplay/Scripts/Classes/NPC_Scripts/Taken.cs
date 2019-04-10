@@ -64,6 +64,12 @@ public class Taken : EnemyBaseScript
         _target.TakeDamage(_dmg);
     }
 
+    protected virtual void Attack()
+    {
+
+    }
+
+
     protected virtual bool frontCheck()
     {
 

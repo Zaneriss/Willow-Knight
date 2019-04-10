@@ -5,7 +5,10 @@ using UnityEngine;
 public class BladeWraith : EnemyBaseScript
 {
 
-protected void Update()
+    [Range(1, 5)]
+    public float AttackRange = 1;
+
+    protected void Update()
 {
     Movement();
 }
@@ -41,7 +44,21 @@ protected virtual void attack(iDamagable _target, int _dmg)
     _target.TakeDamage(_dmg);
 }
 
-protected bool TerrainCheck(Vector2 _movementDirection)
+    protected virtual void AttackTrigger()
+    {
+        if (playerDetection(AttackRange) != Vector2.zero)
+        {
+            Attack();
+        }
+    }
+
+    protected virtual void Attack()
+    {
+
+    }
+
+
+    protected bool TerrainCheck(Vector2 _movementDirection)
     {
         RaycastHit2D[] _hit = Physics2D.LinecastAll(
             new Vector2(this.transform.position.x, this.transform.position.y),
