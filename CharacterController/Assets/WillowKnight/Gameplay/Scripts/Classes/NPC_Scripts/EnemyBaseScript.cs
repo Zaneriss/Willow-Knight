@@ -88,7 +88,7 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
         );
 
            for(int _i = 0; _i<_hit.Length;_i++){
-               if(_hit[_i].collider.tag != "Enemy"){
+               if(_hit[_i].collider.tag == "Terrain"){
                    _checkData = true;
                }
            }

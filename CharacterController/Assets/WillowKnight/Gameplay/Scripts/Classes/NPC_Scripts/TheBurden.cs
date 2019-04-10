@@ -2,27 +2,50 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AbyssalMass : EnemyBaseScript
-{
+    public enum BurdenBossStates{
+        IDLE,
+        APROACH,
+        SWIPE,
+        STOMP,
+        RANGE
+    }
 
+public class TheBurden : EnemyBaseScript
+{
 
     [Range(1, 17)]
     public float FallSpeedInUnitsPerSecond = 1;
-
     public Transform frontCheckObject;
+    public BurdenBossStates currentState;
 
+    protected virtual void BossStateAction(){
+        switch(currentState){
+            case(BurdenBossStates.IDLE):
+            CheckRanges();
+            break;
+            case(BurdenBossStates.APROACH):
 
-    [Range(1,5)]
-    public float AttackRange = 1;
+            break;
+            case(BurdenBossStates.STOMP):
 
-    protected void Update()
-    {
-        Movement();
+            break;
+            case(BurdenBossStates.RANGE):
+
+            break;
+            case(BurdenBossStates.SWIPE):
+
+            break;
+        }
     }
 
-    public override void Movement()
-    {
-        Vector2 _playerPosition = playerDetection();
+    public void CheckRanges(){
+
+    }
+
+
+
+    public override void Movement(){
+                Vector2 _playerPosition = playerDetection();
         Rigidbody2D MyRigidBody = this.gameObject.GetComponent<Rigidbody2D>();
 
         //horizontal movement tracking the player
@@ -53,24 +76,14 @@ public class AbyssalMass : EnemyBaseScript
             MyRigidBody.position += (Vector2.down * FallSpeedInUnitsPerSecond) * Time.deltaTime;
         }
 
+        CheckRanges();
+    }
+
+    // Update is called once per frame
+    protected override void SelfDestruct(){
 
     }
 
-    protected override void SelfDestruct()
-    {
-        Destroy(this.gameObject);
-    }
-
-    protected virtual void AttackTrigger(){
-        if(playerDetection(AttackRange)!=Vector2.zero){
-            Attack();
-        }
-    }
-
-    protected virtual void Attack()
-    {
-     
-    }
 
     protected virtual bool frontCheck()
     {
@@ -93,5 +106,8 @@ public class AbyssalMass : EnemyBaseScript
 
         return _checkData;
     }
+
+
+
 
 }

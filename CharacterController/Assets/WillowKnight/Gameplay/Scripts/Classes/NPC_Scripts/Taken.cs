@@ -2,18 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AbyssalMass : EnemyBaseScript
+public class Taken : EnemyBaseScript
 {
 
 
     [Range(1, 17)]
-    public float FallSpeedInUnitsPerSecond = 1;
+    public float FallSpeedInUnitsPerSecond = 5;
 
     public Transform frontCheckObject;
 
 
-    [Range(1,5)]
-    public float AttackRange = 1;
 
     protected void Update()
     {
@@ -48,7 +46,7 @@ public class AbyssalMass : EnemyBaseScript
 
 
         //gravity effect
-        if (GroundCheck() != true)
+        if ((_playerPosition.x == this.transform.position.x) && (_playerPosition.y < this.transform.position.y))
         {
             MyRigidBody.position += (Vector2.down * FallSpeedInUnitsPerSecond) * Time.deltaTime;
         }
@@ -61,16 +59,16 @@ public class AbyssalMass : EnemyBaseScript
         Destroy(this.gameObject);
     }
 
-    protected virtual void AttackTrigger(){
-        if(playerDetection(AttackRange)!=Vector2.zero){
-            Attack();
-        }
+    protected virtual void attack(iDamagable _target, int _dmg)
+    {
+        _target.TakeDamage(_dmg);
     }
 
     protected virtual void Attack()
     {
-     
+
     }
+
 
     protected virtual bool frontCheck()
     {
