@@ -7,7 +7,7 @@ public class BladeWraith : EnemyBaseScript
 
 protected void Update()
 {
-    TerrainCheck();
+    Movement();
 }
 
 public override void Movement()
@@ -19,7 +19,10 @@ public override void Movement()
     if (_playerPosition != Vector2.zero)
     {
         Vector2 _playerDirection = _playerPosition - new Vector2(this.transform.position.x, this.transform.position.y);
-        MyRigidBody.position += ((new Vector2(_playerDirection.x, _playerDirection.y)).normalized * moveSpeedInUnitsPerSecond) * Time.deltaTime;
+            if (!TerrainCheck(_playerDirection.normalized + new Vector2(this.transform.position.x, this.transform.position.y)))
+            {
+                MyRigidBody.position += ((new Vector2(_playerDirection.x, _playerDirection.y)).normalized * moveSpeedInUnitsPerSecond) * Time.deltaTime;
+            }
     }
     //horizontal end
 }
@@ -38,21 +41,21 @@ protected virtual void attack(iDamagable _target, int _dmg)
     _target.TakeDamage(_dmg);
 }
 
-protected void TerrainCheck()
+protected bool TerrainCheck(Vector2 _movementDirection)
     {
-        Vector2 _playerPosition = playerDetection();
         RaycastHit2D[] _hit = Physics2D.LinecastAll(
             new Vector2(this.transform.position.x, this.transform.position.y),
-            new Vector2(_playerPosition.x, _playerPosition.y)
+            new Vector2(_movementDirection.x, _movementDirection.y)
         );
 
         for (int _i = 0; _i < _hit.Length; _i++)
         {
-            if (_hit[_i].collider.tag != "Terrain")
+            if (_hit[_i].collider.tag == "Terrain")
             {
-                Movement();
+                return true;
             }
         }
+        return false;
     }
 
 }
