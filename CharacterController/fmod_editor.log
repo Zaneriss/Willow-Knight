@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000000035E5D248 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000004ED37B08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,19 +16,6 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
-[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
-[LOG] SoundI::release                          :  (00000000359B7A38)
-[LOG] SoundI::release                          :     Player_landing_SoundEffect (0000000035A4A878)
-[LOG] SoundI::release                          :  (00000000359B64A8)
-[LOG] SoundI::release                          :     Player_Jump_Sound1 (000000001EBC9FE8)
-[LOG] SoundI::release                          :  (00000000359B7E88)
-[LOG] SoundI::release                          :     Player_Jump_Sound2 (000000001EBC9CA8)
-[LOG] SoundI::release                          :  (00000000359B85B8)
-[LOG] SoundI::release                          :     Player_Jump_Sound3 (0000000035A4ABB8)
-[LOG] SoundI::release                          :  (00000000359B8448)
-[LOG] SoundI::release                          :     Player_Jump_Sound4 (0000000035A4AD58)
-[LOG] SoundI::release                          :  (00000000359B7BA8)
-[LOG] SoundI::release                          :     Player_weapon_Swing (0000000035A4AA18)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -39,6 +26,7 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
