@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-    public enum BossStates{
+    public enum BurdenBossStates{
         IDLE,
         APROACH,
         SWIPE,
@@ -16,7 +16,7 @@ public class TheBurden : EnemyBaseScript
     [Range(1, 17)]
     public float FallSpeedInUnitsPerSecond = 1;
 
-    public BossStates currentState;
+    public BurdenBossStates currentState;
 
 
     public override void Movement(){
