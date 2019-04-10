@@ -236,7 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeedInUnitsPerSecond: 1
   maxHealth: 10
-  detectionRadius: 10
+  detectionRadius: 20
   groundCheckObject: {fileID: 7730765374922589934}
   FallSpeedInUnitsPerSecond: 2
   frontCheckObject: {fileID: 7730765374687548104}
