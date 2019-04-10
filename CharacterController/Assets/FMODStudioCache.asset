@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114089567991562426}
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   EditorEvents:
   - {fileID: 114081328696500320}
   - {fileID: 114414995524646070}
@@ -44,10 +44,10 @@ MonoBehaviour:
   - {fileID: 114928015174691006}
   - {fileID: 114787177883768152}
   MasterBanks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   StringsBanks:
   - {fileID: 114089567991562426}
-  stringsBankWriteTime: 636904287823511290
+  stringsBankWriteTime: 636904425595508597
   cacheVersion: 3
 --- !u!114 &114004810693103618
 MonoBehaviour:
@@ -64,7 +64,7 @@ MonoBehaviour:
   Path: event:/Other sound affects/Player_Possible_Charge_Sound_Fade_In
   guid: be84bb6e1b9c114083f9ab62b8fb9bc4
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -87,7 +87,7 @@ MonoBehaviour:
   Path: event:/Enemies/Crawler/Enemy_crawler_crawling
   guid: 90012bd964ddbf44b164a95a35436d4a
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -110,7 +110,7 @@ MonoBehaviour:
   Path: event:/Weapon sounds/Weapon_Swing_Charged_Attack
   guid: 1386b1869d24b646bb32ba10e5cb48db
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -131,11 +131,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Fmod-Willow\Willow_Knight_Sounds\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636904287823511290
+  lastModified: 636904425595508597
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 2150
+  Exists: 1
+--- !u!114 &114129190428506574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\ddebo\Desktop\Game Projects\Unity\Prototyping\Willow Knight\Willow-Knight\CharacterController\Fmod-Willow\Willow_Knight_Sounds\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636904425595398877
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 626880
   Exists: 1
 --- !u!114 &114273916586462694
 MonoBehaviour:
@@ -152,7 +172,7 @@ MonoBehaviour:
   Path: event:/Other sound affects/Charge_Sound_1
   guid: 802f0aa59cf17f4d9b259319364d109e
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -175,7 +195,7 @@ MonoBehaviour:
   Path: event:/Enemies/Wraith_Enemy_Sounds/Wraith_Enemy_Sound_Affect
   guid: 1676d8e4d4f460469ee09beeb66b4358
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -198,7 +218,7 @@ MonoBehaviour:
   Path: event:/Other sound affects/Charge_Sound_3
   guid: 8f1ce5f0053fac4097aa08470119ad98
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -221,7 +241,7 @@ MonoBehaviour:
   Path: event:/Other sound affects/Player_Possible_Charge_Sound
   guid: d923d243447c2b4f8eb71aad235dd121
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -244,7 +264,7 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player_Dying_Sound
   guid: 5b8aa1ab1047e0498dfad5e9c4e9ef31
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -267,7 +287,7 @@ MonoBehaviour:
   Path: event:/Enemies/Crawler/Enemy_crawler_death_sound
   guid: dca6194595ab6e42976b5ad82ff50c13
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -290,7 +310,7 @@ MonoBehaviour:
   Path: event:/Weapon sounds/Weapon_Swing_Attacked
   guid: 4a085537ad55a04a8be385e16b675851
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -313,7 +333,7 @@ MonoBehaviour:
   Path: event:/Enemies/Mass/Enemy_AbyssalMass_Death_Sound
   guid: 3ca4b16981c0114295183693897676b9
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -340,7 +360,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 626880
-  Exists: 1
+  Exists: 0
 --- !u!114 &114583274385505652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,7 +376,7 @@ MonoBehaviour:
   Path: event:/Other sound affects/Teleport
   guid: 41ee4cc6e480314aa7bea75021a4f5d8
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -379,7 +399,7 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player_Getting_Hit
   guid: 55e5014ecfc924489b0ea5051bfba508
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -402,7 +422,7 @@ MonoBehaviour:
   Path: event:/Enemies/Burden/Enemy_Burnden_Death_Sound
   guid: 5f7e5d3421f3a1448bc7b5128758afce
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -425,7 +445,7 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player_Jumping_Sounds
   guid: 424a596411778d42b7fef9fd1e546759
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -448,7 +468,7 @@ MonoBehaviour:
   Path: event:/Enemies/Wraith_Enemy_Sounds/Wraith_Enemy_Dying_Sound
   guid: bfa68de5864cf049b83dc6e14d84e748
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -471,7 +491,7 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player_landing_SoundEffect
   guid: 2c621c4dea4760438ac424a91cbc8c33
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -494,7 +514,7 @@ MonoBehaviour:
   Path: event:/Enemies/Mass/Enemy_AbyssalMass_Attack
   guid: 76a1b57a96b82d47a5080cff0193abb9
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -517,7 +537,7 @@ MonoBehaviour:
   Path: event:/Other sound affects/Charge_Sound_2
   guid: 7d5968c6be295345b5e7ae397a7c0368
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -540,7 +560,7 @@ MonoBehaviour:
   Path: event:/Enemies/Mass/Enemy_AbyssalMass_Sound
   guid: eb9beb93fe3b2a44ba72a1ba454ae1f8
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -563,7 +583,7 @@ MonoBehaviour:
   Path: event:/Other sound affects/Charge_Sound_4
   guid: 435cdcb2d2fe774faf61c7c36fddf52f
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -586,7 +606,7 @@ MonoBehaviour:
   Path: event:/Enemies/Crawler/Enemy_crawler_Murmurs
   guid: f13b106ba5ea404dbab640396cb2ec10
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -609,7 +629,7 @@ MonoBehaviour:
   Path: event:/Environment_Sounds/Wind_Sounds_loop
   guid: 46305c124f37f64e86e16e1ec9b8b895
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -632,7 +652,7 @@ MonoBehaviour:
   Path: event:/Enemies/Burden/Enemy_Burnden_Thrown_voice
   guid: ec607571c23d244b95aa4dfe6887e0e4
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -655,7 +675,7 @@ MonoBehaviour:
   Path: event:/Other sound affects/Player_Possible_Dash_Sound
   guid: 643d22e9d4cb8e499eafb8d38bae9545
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -678,7 +698,7 @@ MonoBehaviour:
   Path: event:/Enemies/Wraith_Enemy_Sounds/Wraith_Enemy_Sound_Attacking
   guid: 329e400be14ffc4395232e2a084d3169
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -701,7 +721,7 @@ MonoBehaviour:
   Path: event:/Enemies/Burden/Enemy_Burnden_Footstep
   guid: 61c95f7ccc3e24498af404c50a5e9ca2
   Banks:
-  - {fileID: 114576593594367596}
+  - {fileID: 114129190428506574}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
