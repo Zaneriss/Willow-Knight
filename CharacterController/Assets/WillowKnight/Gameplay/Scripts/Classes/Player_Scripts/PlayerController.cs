@@ -75,11 +75,12 @@ public class PlayerController : MonoBehaviour
 
     //Double Jump Code
 
+
+  
+  
+
     void Update()
     {
-
-
-
 
         if (rb.velocity.y == 0)
         {
@@ -121,11 +122,6 @@ public class PlayerController : MonoBehaviour
         //movement
 
 
-
-
-        dirX = Input.GetAxis("Horizontal") * moveSpeed;
-        rb.velocity = new Vector2(dirX, rb.velocity.y);
-
         //animates walking movement
 
         animator.SetFloat("GroundMovement", Mathf.Abs(dirX));
@@ -142,11 +138,6 @@ public class PlayerController : MonoBehaviour
 
             transform.localScale = theScale;
         }
-
-
-
-
-
 
         //checks for a surface to the immediate right or left of the player
         wallCheckHitR = Physics2D.Raycast(wallCheckR.position, wallCheckR.right, wallCheckDistanceR);
@@ -165,7 +156,7 @@ public class PlayerController : MonoBehaviour
         //checks for wall contact and then turns on wallslide if there is contact
         if (wallCheckHitR && rb.velocity.y <= 0 && !onTheGround)
         {
-            WallSlidingR = true;
+            WallSlidingRight();
 
         }
 
@@ -174,13 +165,6 @@ public class PlayerController : MonoBehaviour
             WallSlidingR = false;
         }
 
-        if (WallSlidingR)
-        {
-            if (rb.velocity.y < -maxWallSlideVel)
-            {
-                rb.velocity = new Vector2(0, -maxWallSlideVel);
-            }
-        }
 
         if (wallCheckHitL)
         {
@@ -189,7 +173,7 @@ public class PlayerController : MonoBehaviour
 
         if (wallCheckHitL && rb.velocity.y <= 0 && !onTheGround)
         {
-            WallSlidingL = true;
+            WallSlidingLeft();
 
         }
 
@@ -198,20 +182,39 @@ public class PlayerController : MonoBehaviour
             WallSlidingL = false;
         }
 
-        if (WallSlidingL)
-        {
+   
+    }
+
+    private void FixedUpdate()
+    {
+
+            dirX = Input.GetAxis("Horizontal") * moveSpeed;
+            rb.velocity = new Vector2(dirX, rb.velocity.y);
+        
+    }
+
+   
+
+    void WallSlidingRight()
+    {
+       
             if (rb.velocity.y < -maxWallSlideVel)
             {
                 rb.velocity = new Vector2(0, -maxWallSlideVel);
             }
-        }
-
-        //player health stuff
-
-        //HealthBar.value = PlayerHealth;
 
     }
-    
+
+    void WallSlidingLeft()
+    {
+
+            if (rb.velocity.y < -maxWallSlideVel)
+            {
+                rb.velocity = new Vector2(0, -maxWallSlideVel);
+            }      
+
+    }
+
 
     //jumping code
     void Jump()
