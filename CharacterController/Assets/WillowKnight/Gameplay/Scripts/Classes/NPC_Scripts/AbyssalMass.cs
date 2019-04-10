@@ -12,6 +12,8 @@ public class AbyssalMass : EnemyBaseScript
     public Transform frontCheckObject;
 
 
+    [Range(1,5)]
+    public float AttackRange = 1;
 
     protected void Update()
     {
@@ -59,9 +61,15 @@ public class AbyssalMass : EnemyBaseScript
         Destroy(this.gameObject);
     }
 
-    protected virtual void attack(iDamagable _target, int _dmg)
+    protected virtual void AttackTrigger(){
+        if(playerDetection(AttackRange)!=Vector2.zero){
+            Attack();
+        }
+    }
+
+    protected virtual void Attack()
     {
-        _target.TakeDamage(_dmg);
+     
     }
 
     protected virtual bool frontCheck()
