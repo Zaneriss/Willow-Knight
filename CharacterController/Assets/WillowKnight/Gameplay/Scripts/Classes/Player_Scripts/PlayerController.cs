@@ -58,9 +58,12 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
 
     //fmod sound effects 
+    FMOD.Studio.EventInstance PlayerJumpSound;
 
-
-
+    void Awake()
+    {
+        PlayerJumpSound = FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_Jumping_Sounds");
+    }
     // Use this for initialization
     void Start()
     {
@@ -224,6 +227,7 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x, 0f); ;
         rb.AddForce(Vector2.up * jumpForce);
+        PlayerJumpSound.start();
        // FMODUnity.RuntimeManager.CreateInstance("event:/Player Sounds/Player_Jumping_Sounds");
 
         //if the player is in conact with a wall they get more height from this 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class PlayerAttack : MonoBehaviour { 
 
@@ -29,8 +30,14 @@ public class PlayerAttack : MonoBehaviour {
     public Animator BorisSlash;
 
     //attack sound effect
-    
+    FMOD.Studio.EventInstance PlayerAttackSound;
+    FMOD.Studio.EventInstance PlayerJumpSound;
 
+
+    void Awake()
+    {
+        PlayerAttackSound = FMODUnity.RuntimeManager.CreateInstance("event:/Weapon sounds/Weapon_Swing_Attacked");
+    }
     public void Update()
     {
         //if not already in the middle of an attacking allows the player to attack in the given range
@@ -40,12 +47,12 @@ public class PlayerAttack : MonoBehaviour {
             if (Input.GetKey(AttackKey))
             {
                 BorisSlash.SetTrigger("IsAttacking");
-                FMODUnity.RuntimeManager.CreateInstance("event:/Weapon sounds/Weapon_Swing_Attacked");
+                PlayerAttackSound.start();
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, MarkAsEnemy);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
 
-                    enemiesToDamage[i].GetComponent<Boss>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<iDamagable>().TakeDamage(damage);
                 }
 
             }
