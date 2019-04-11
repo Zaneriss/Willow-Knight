@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     float dirX;
 
     //determines base jump force and movement speed
-    float jumpForce = 1000f, moveSpeed = 15f;
+    float jumpForce = 1250f, moveSpeed = 15f;
     
     
     Rigidbody2D rb;
