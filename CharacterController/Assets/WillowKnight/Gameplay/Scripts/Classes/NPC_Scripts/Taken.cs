@@ -46,7 +46,7 @@ public class Taken : EnemyBaseScript
 
 
         //gravity effect
-        if ((_playerPosition.x <= this.transform.position.x + 3 && <= this.transform.position.x - 3) && (_playerPosition.y <= this.transform.position.y))
+        if ((_playerPosition.x <= this.transform.position.x + 3 && _playerPosition >= this.transform.position.x - 3) && (_playerPosition.y <= this.transform.position.y))
         {
             MyRigidBody.position += (Vector2.down * FallSpeedInUnitsPerSecond) * Time.deltaTime;
         }
