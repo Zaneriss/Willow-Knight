@@ -185,7 +185,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 8844856}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -401,9 +401,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a74e9af5fe2b44ead71329a5fce306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeedInUnitsPerSecond: 3
+  moveSpeedInUnitsPerSecond: 1
   maxHealth: 10
-  detectionRadius: 10
+  detectionRadius: 5
   groundCheckObject: {fileID: 0}
   AttackRange: 1
 --- !u!4 &359986977
