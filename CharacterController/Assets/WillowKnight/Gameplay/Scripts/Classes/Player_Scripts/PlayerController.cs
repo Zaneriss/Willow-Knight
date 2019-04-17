@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
     //determines the force at which a player is able to jump off of a wall
     public float wallJumpForce;
 
-    public int PlayerHealth;
+  
 
     private RaycastHit2D wallCheckHitR;
     private RaycastHit2D wallCheckHitL;
@@ -88,7 +88,6 @@ public class PlayerController : MonoBehaviour
         {
             onTheGround = true;
 
-            Debug.Log("fug");
         }
 
         else
@@ -157,33 +156,33 @@ public class PlayerController : MonoBehaviour
 
 
         //checks for wall contact and then turns on wallslide if there is contact
-        if (wallCheckHitR && rb.velocity.y <= 0 && !onTheGround)
-        {
-            WallSlidingRight();
+       // if (wallCheckHitR && rb.velocity.y <= 0 && !onTheGround)
+       // {
+           // WallSlidingRight();
 
-        }
+       // }
 
-        else
-        {
-            WallSlidingR = false;
-        }
+      //  else
+       // {
+        //    WallSlidingR = false;
+      //  }
 
 
-        if (wallCheckHitL)
-        {
-            Debug.Log("killme");
-        }
+      //  if (wallCheckHitL)
+      //  {
+     //       Debug.Log("killme");
+      //  }
 
-        if (wallCheckHitL && rb.velocity.y <= 0 && !onTheGround)
-        {
-            WallSlidingLeft();
+      //  if (wallCheckHitL && rb.velocity.y <= 0 && !onTheGround)
+      //  {
+      //      WallSlidingLeft();
 
-        }
+      //  }
 
-        else
-        {
-            WallSlidingL = false;
-        }
+      //  else
+       // {
+       //     WallSlidingL = false;
+      //  }
 
    
     }
@@ -198,25 +197,25 @@ public class PlayerController : MonoBehaviour
 
    
 
-    void WallSlidingRight()
-    {
+    //void WallSlidingRight()
+   // {
        
-            if (rb.velocity.y < -maxWallSlideVel)
-            {
-                rb.velocity = new Vector2(0, -maxWallSlideVel);
-            }
+  //          if (rb.velocity.y < -maxWallSlideVel)
+  //          {
+//             rb.velocity = new Vector2(0, -maxWallSlideVel);
+  //          }
 
-    }
+  //  }
 
-    void WallSlidingLeft()
-    {
+  //  void WallSlidingLeft()
+  //  {
 
-            if (rb.velocity.y < -maxWallSlideVel)
-            {
-                rb.velocity = new Vector2(0, -maxWallSlideVel);
-            }      
+  //          if (rb.velocity.y < -maxWallSlideVel)
+  //          {
+   //             rb.velocity = new Vector2(0, -maxWallSlideVel);
+   //         }      
 
-    }
+  //  }
 
 
     //jumping code
