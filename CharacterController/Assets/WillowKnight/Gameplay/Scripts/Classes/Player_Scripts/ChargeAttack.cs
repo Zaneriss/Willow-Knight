@@ -35,7 +35,21 @@ public class ChargeAttack : MonoBehaviour {
     public GameObject ReadyParticles;
 
 
- 
+    //fmod sounds
+
+    FMOD.Studio.EventInstance PlayerChargeSoundOne;
+    FMOD.Studio.EventInstance PlayerChargeSoundTwo;
+    FMOD.Studio.EventInstance PlayerChargeSoundThree;
+    FMOD.Studio.EventInstance PlayerChargeSoundFour;
+
+     void Awake()
+    {
+        PlayerChargeSoundOne = FMODUnity.RuntimeManager.CreateInstance("event:/Other sound affects/Charge_Sound_1");
+        PlayerChargeSoundTwo = FMODUnity.RuntimeManager.CreateInstance("event:/Other sound affects/Charge_Sound_2");
+        PlayerChargeSoundThree = FMODUnity.RuntimeManager.CreateInstance("event:/Other sound affects/Charge_Sound_3");
+        PlayerChargeSoundFour = FMODUnity.RuntimeManager.CreateInstance("event:/Other sound affects/Charge_Sound_4");
+    }
+
 
     // Update is called once per frame
     void Update () {
@@ -51,19 +65,28 @@ public class ChargeAttack : MonoBehaviour {
         if ((Chargetime > 0.1) && ( Chargetime < 0.75))
         {
             Instantiate(ChargingParticles1, transform.position, Quaternion.identity);
-     
+            if ((Chargetime > 0.1) && (Chargetime < 0.12))
+            {
+                PlayerChargeSoundOne.start();
+            }
         }
 
         if ((Chargetime > 0.75) && (Chargetime < 1.5))
         {
             Instantiate(ChargingParticles2, transform.position, Quaternion.identity);
-     
+            if ((Chargetime > 0.75) && (Chargetime < 0.77))
+            {
+                PlayerChargeSoundTwo.start();
+            }
         }
 
         if ((Chargetime > 1.5) && (Chargetime < 2))
         {
             Instantiate(ChargingParticles3, transform.position, Quaternion.identity);
-            
+            if ((Chargetime > 1.5) && (Chargetime < 1.52))
+            {
+                PlayerChargeSoundThree.start();
+            }
         }
 
         if (Chargetime > 2) 
@@ -75,7 +98,7 @@ public class ChargeAttack : MonoBehaviour {
         if ((Chargetime > 2) && (Chargetime < 2.1))
         {
             Instantiate(ReadyParticles, transform.position, Quaternion.identity);
-        
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Other sound affects/Teleport");
         }
 
         //if the key is released and the chargetime is above the required amount to fully charge the attack, the attack gets
@@ -86,7 +109,7 @@ public class ChargeAttack : MonoBehaviour {
             Debug.Log("Boris SpecSlash");
             BorisSlash.SetTrigger("IsAttacking");
             Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, MarkAsEnemy);
-           
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Weapon sounds/Weapon_Swing_Charged_Attack");
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
 

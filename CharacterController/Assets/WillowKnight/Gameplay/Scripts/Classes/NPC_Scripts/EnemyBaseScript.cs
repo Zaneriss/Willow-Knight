@@ -16,7 +16,7 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
 
     public Transform groundCheckObject;
 
-    public GameObject Blood;
+    
 
 
     protected virtual void Start() {
@@ -72,7 +72,6 @@ public abstract class EnemyBaseScript : MonoBehaviour , iDamagable
     public virtual void TakeDamage(int _dmg){
         //lower health by damage value
         currentHealth -= _dmg;
-        GameObject EnemyBleed = GameObject.Instantiate(Blood, this.transform.position, Quaternion.identity);
         //run enemy specific death script if current health is less than or equal to zero
         if(currentHealth<=0){
             SelfDestruct();

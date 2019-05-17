@@ -107,7 +107,6 @@ GameObject:
   - component: {fileID: 114015148507011594}
   - component: {fileID: 61735892388068266}
   - component: {fileID: 95921267358099734}
-  - component: {fileID: 1718731724}
   m_Layer: 0
   m_Name: Player_Prefab
   m_TagString: Player
@@ -216,6 +215,7 @@ MonoBehaviour:
   wallCheckDistanceL: 0.01
   maxWallSlideVel: 2
   wallJumpForce: 900
+  PlayerHealth: 10
   animator: {fileID: 95921267358099734}
 --- !u!114 &114404637215975494
 MonoBehaviour:
@@ -338,19 +338,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1718731724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934895958275472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81fdea73faccb944da5686f10ea533c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 20
-  ForceStrength: 10
-  DeathEffect: {fileID: 1638583310164914, guid: db979a8dcaf2a5342a9c4c909283a91a,
-    type: 3}

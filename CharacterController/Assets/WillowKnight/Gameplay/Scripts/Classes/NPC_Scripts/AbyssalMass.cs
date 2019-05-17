@@ -18,8 +18,6 @@ public class AbyssalMass : EnemyBaseScript
 
     public Animator animatorComponent;
 
-    public GameObject DeathBlast;
-
     protected override void Start()
     {
         base.Start();
@@ -29,7 +27,6 @@ public class AbyssalMass : EnemyBaseScript
     protected void Update()
     {
         Movement();
-        AttackTrigger();
     }
 
     public override void Movement()
@@ -71,8 +68,6 @@ public class AbyssalMass : EnemyBaseScript
     protected override void SelfDestruct()
     {
         Destroy(this.gameObject);
-        GameObject DeathBurst = GameObject.Instantiate(DeathBlast, this.transform.position, Quaternion.identity);
-
     }
 
     protected virtual void AttackTrigger(){
@@ -83,7 +78,7 @@ public class AbyssalMass : EnemyBaseScript
 
     protected virtual void Attack()
     {
-        animatorComponent.SetTrigger("AttackTrigger");
+     
     }
 
     protected virtual bool frontCheck()
